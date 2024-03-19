@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+.btn-nav {
+  background-color: hsla(308, 33%, 49%, 1);
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  font-size: 1.2rem;
+  font-family: ;
+}
+
+.btn-nav:hover {
+  background-color: transparent;
+  border: 2px solid hsla(308, 33%, 49%, 1);
+  color: hsla(308, 33%, 49%, 1);
+}
+
+.nav-list {
+  font-size: 1.2rem;
+}
+
+.nav-list li:hover {
+  color: rgb(8, 3, 3);
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: hsla(308, 33%, 49%, 0.24);
+}
+
+.btn-hero {
+  background-color: hsla(308, 33%, 49%, 1);
+  padding: 10px 3.5rem;
+  border: 2px solid transparent;
+}
+
+.btn-hero:hover {
+  border: 2px solid hsla(308, 33%, 49%, 1);
+  background-color: transparent;
+  color: hsla(308, 33%, 49%, 1);
+}
+
+/* hamburger */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: hsla(308, 33%, 49%, 1);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translate(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translate(0px);
+}
+
+/* End of Hamburger */
+
+.f-nav-list li a {
+  line-height: 40px;
+}
+
+.f-nav-list li a:hover {
+  transform: scale(3);
+}
+
+input::placeholder {
+  color: hsla(308, 33%, 49%, 1);
+}
+
+textarea {
+  color: hsla(308, 33%, 49%, 1);
+}
+
+@media (max-width: 830px) {
+  .nav-list {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsla(308, 33%, 49%, 1);
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+    display: none;
+  }
+
+  .show-nav-list {
+    display: block;
+    transition: all 2s;
+  }
+
+  .nav-list li {
+    line-height: 1.5rem;
+    /* color: red; */
+    margin: 13px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .btn-hero {
+    padding: 10px 1.5rem;
+  }
+
+  .lve1 {
+    max-width: 50vw;
+  }
+
+  .lve2 {
+    margin: 50px auto;
+    max-width: 50vw;
+  }
+}

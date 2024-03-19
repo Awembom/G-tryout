@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tailwind first Try</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <href
+      ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="/src/rootstyle.css" />
+    <link rel="stylesheet" href="/src/home.css" />
+  </head>
+  <body>
+    <!-- start of navigation -->
+    <header>
+      <nav
+        class="max-w-[95%] md:max-w-[85%] flex justify-between items-center m-auto mt-10"
+      >
+        <div>
+          <img src="/img/GGIT_Logo - Real 1.png" alt="here is the logo" />
+        </div>
+
+        <div class="flex items-center">
+          <ul class="lg:flex flex-row mr-24 nav-list" id="menu">
+            <li><a class="mx-6 active:bg-primaryPink" href="#">Home</a></li>
+            <li><a class="mx-6" href="#">About Us</a></li>
+            <li><a class="mx-6" href="#">Programs</a></li>
+            <li><a class="mx-6" href="#">Contact us</a></li>
+          </ul>
+
+          <div class="inline-flex text-center items-center space-x-6">
+            <button class="btn-nav text-veryLight">Apply Now</button>
+            <button
+              id="menu-btn"
+              class="block hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of navigation -->
+
+    <!-- Start of Hero Section -->
+    <section class="hero relative" id="hero">
+      <div
+        class="container md:flex justify-between max-w-[90%] md:max-w-[80%] mx-auto my-20 space-x-12  "
+      >
+        <div class="hero-content md:w-[50%]">
+          <h6 class="mt-0">Empowering</h6>
+          <h6><span class="text-primaryPink">women</span></h6>
+
+          <p
+            class="text-[hsla(216, 6%, 51%, 1)] md:text-[34px] text-[1.3rem] text-GrayishDark"
+          >
+            We recognize the unique challenges that women face in this industry
+            and aim to provide targeted support to help them overcome these
+            obstacles.
+            <img
+              src="/img/firstill.png"
+              class="absolute md:left-12 -bottom-36"
+              alt=""
+            />
+          </p>
+
+          <div class="flex justify-center md:justify-stretch space-x-4 my-56 md:my-0 ">
+            <button class="btn-hero text-veryLight">Apply Now</button>
+            <button class="btn-hero text-veryLight">Join our Community</button>
+          </div>
+        </div>
+        <div class="">
+          <img
+            src="/img/Hero Illustration.png"
+            class="absolute -bottom-36 right-0 w-[900px] "
+            alt=""
+          />
+        </div>
+        
+
+        <!-- <div class="">
+          
+          <div
+            class="circle big md:w-[25rem] md:h-[25rem] h-[16rem] w-[16rem]"
+          ></div>
+          <div
+            class="circle medium w-[54px] h-[54px] absolute top-0 right-20"
+          ></div>
+          <div
+            class="circle medium hidden md:block md:w-[194px] md:h-[194px] absolute top-44 -right-16"
+          >
+            <div
+              class="circle medium w-[94px] h-[94px] absolute md:-top-8 md:right-6"
+            ></div>
+          </div>
+        </div>   -->
+
+      </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Start of Mentees Section -->
+    <section class="border-solid border-primaryPink bg-[#3E6DB5] my-36">
+      <div class="flex justify-center space-x-10 text-white py-6">
+        <div class="text-center text-[1.3rem]">
+          <p>Mentees</p>
+          <p>40</p>
+        </div>
+
+        <div class="text-center text-[1.3rem]">
+          <p>Mentors</p>
+          <p>12</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <<< End of Mentees section-->
+
+    <!-- Start of Mission and Vision Section -->
+
+    <section class="toJoin relative">
+      <div
+        class="container max-w-[80%] mx-auto my-16 md:flex justify-between items-center"
+      >
+        <div class="md:w-[50%] ">
+          <h3 class="text-[2.5rem] text-start md:text-start">
+            Our <span class="text-[#3E6DB5] ">Mission</span>
+          </h3>
+          <p class="text-[1.3rem] leading-10">
+            We recognize the unique challenges that women face in this industry
+            and aim to provide targeted support to help them overcome these
+            obstacles. We recognize the unique challenges that women face in
+            this industry and aim to provide targeted support to help them
+            overcome these obstacles. We recognize the unique challenges that
+            women face in this industry and aim to provide targeted support to
+            help them overcome these obstacles.
+          </p>
+        </div>
+
+        <div>
+          <img src="/img/lve2.png" class="mx-auto lve-2" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="container max-w-[80%] mx-auto my-16 md:flex justify-between items-center"
+      >
+        <div>
+          <img
+            src="/img/Group 84 1 (1).png"
+            class="mx-auto lve-2 w-64"
+            alt=""
+          />
+        </div>
+
+        <div class="md:w-[50%]   md:text-start ">
+          <h3 class="text-[2.5rem] text-center">
+            Our <span class="text-[#3E6DB5]">Vision</span>
+          </h3>
+          <ul class="list-disc text-[1.3rem]">
+            <li class="">
+              <p >We recognize the unique challenges that women face in this
+                industry and aim to provide targeted</p>
+            </li>
+
+            <li>
+              <p>support to help them overcome these obstacles. We recognize the
+                unique challenges that women face in this industry and aim to
+                provide targeted</p>
+            </li>
+
+            <li><p>support to help them overcome these obstacles.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End of Mission and Vision -->
+
+    <!-- STart of Programs -->
+
+    <section class="outPrograms relative">
+      <img src=" /img/Vector-5 1.png" class="hidden md:block absolute right-96 -top-40" alt="" />
+      <div class="ourPrograms text-center md:pt-52 md:pb-16 text-white flex space-x-4 w-[90%] mx-auto mb-4 justify-center">
+        <button
+          class="bg-primaryPink px-10 py-2 btn-nav programs all"
+          id="allPrograms"
+        >
+          Our Programs
+        </button>
+        <button
+          class="bg-primaryPink px-10 py-2 btn-nav programs available"
+          id="availablePrograms"
+        >
+          Available Oppotunities
+        </button>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            chevron_left
+          </button>
+          <ul class="image-list">
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li  class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div class="bg-GrayishDark h-[80%] w-[100%]">
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+            <li class="bg-primaryPink h-[400px] w-[300px]">
+              <div  class="bg-GrayishDark h-[80%] w-[100%]" >
+                <img
+                  style="width: 100%; height: 100%"
+                  src="images/img-2.jpg"
+                  alt=""
+                />
+              </div>
+              <h2 style="font-size: 2rem; text-align: center; margin-top: 25px">
+                UX/UI Design
+              </h2>
+            </li>
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            chevron_right
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+      </section>
+    
+      <!-- End of our Programs Section -->
+
+      <!-- Start of Newsletter Section -->
+      <section class="susNewsletter my-20">
+        <div
+          class="container w-[85%] bg-gradient-to-tr from-[#1E527E] via-[#5E3780] to-[#8F2181] mx-auto p-4 md:flex justify-between items-center"
+        >
+          <div class="flex space-x-4 items-center">
+            <div class="bg-white w-12 inSpan">
+              <img
+                src="/img/Open Envelope Clock.png"
+                alt=""
+                class="w-12 bg-transparent"
+              />
+            </div>
+
+            <div class="text-white">
+              <p>Subscribe to our Newsletter</p>
+            </div>
+          </div>
+
+          <div class="my-4 md:my-0">
+            <form action="#" class="lg:bg-white p-2">
+              <input type="text" placeholder="  Email" class="outline-none" />
+              <button
+                type="submit"
+                class="btn-nav bg-[#1E527E] hover:bg-transparent hover:text-[#1E527E] text-white p-2 my-2 lg:my-0"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Newsletter Section -->
+
+      <!-- Start of footer Section -->
+
+      <footer class="">
+        <hr class="my-10 border-solid border-2 border-primaryPink" />
+        <div class="container w-[85%] mx-auto flex justify-between">
+          <div>
+            <img src="/img/GGIT_Logo - Real 1.png" class="w-10" alt="" />
+          </div>
+
+          <div>
+            <p class="text-[0.8rem]">copyright Growing Girls in tech</p>
+          </div>
+
+          <div class="inline-flex space-x-2">
+            <a href="#"
+              ><img src="/img/Vector (5).png" class="md:w-6 w-4" alt=""
+            /></a>
+            <a href="#"
+              ><img src="/img/Vector (6).png" class="md:w-6 w-4" alt=""
+            /></a>
+            <a href="#"
+              ><img src="/img/Social Icons (1).png" class="md:w-6 w-4" alt=""
+            /></a>
+            <a href="#"
+              ><img src="/img/Social Icons.png" class="md:w-6 w-4" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- END OF FOOTER SECTION -->
+
+    <script src="/src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tailwind first Try</title>
+    <link rel="stylesheet" href="../dist/style.css">
+    <href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <nav class="relative  md:container-xl mx-auto p-6 bg-transparent ">
+
+        <!-- Flex container -->
+        <div class="flex items-center justify-between md:w-4/5 md:m-auto">
+          <!-- logo -->
+          <div class="pt-2">
+            <img src="../img/logo.svg" alt="This is the LOgo">
+          </div>  
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex">
+            <a class="hover:text-brightRed" href="#">Pricing</a>
+            <a class="hover:text-brightRed" href="#">Product</a>
+            <a class="hover:text-brightRed" href="#">About us</a>
+            <a class="hover:text-brightRed" href="#">Carreers</a>
+            <a class="hover:text-brightRed" href="#">Community</a>
+          </div>
+          <!-- Our button -->
+          <a href="#" 
+          class="p-3  px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-darkGrayishBlue hidden md:block">Get Started</a>
+
+           <!-- Hamburgar icon -->
+           <button id="menu-btn" class="block hamburger md:hidden 
+           focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute  flex-col items-center self-end  py-8 mt-10 
+            space-y-6 font-bold bg-white sm:w-auto hidden
+            sm:self-center left-6 right-6 drop-shadow:md">
+                <a href="#">Pricing</a>
+                <a href="#">Products</a>
+                <a href="#">About Us</a>
+                <a href="#">Carreers</a>
+                <a href="#">Community</a>
+            </div> 
+        </div>
+    </nav>
+    
+    <script src="js/script.js"></script>
+</html>

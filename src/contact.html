@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tailwind first Try</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <href
+      ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="/src/rootstyle.css" />
+    <link rel="stylesheet" href="/src/contact.css" />
+    <link rel="stylesheet" href="/src/home.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="max-w-[95%] md:max-w-[85%] flex justify-between items-center m-auto mt-10"
+      >
+        <div>
+          <img src="/img/GGIT_Logo - Real 1.png" alt="here is the logo" />
+        </div>
+
+        <div class="flex items-center">
+          <ul class="lg:flex flex-row mr-24 nav-list" id="menu">
+            <li><a class="mx-6 active:bg-primaryPink" href="#">Home</a></li>
+            <li><a class="mx-6" href="#">About Us</a></li>
+            <li><a class="mx-6" href="#">Programs</a></li>
+            <li><a class="mx-6" href="#">Contact us</a></li>
+          </ul>
+
+          <div class="inline-flex text-center items-center space-x-6">
+            <button class="btn-nav text-veryLight">Apply Now</button>
+            <button
+              id="menu-btn"
+              class="block hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of navigation -->
+
+    <section class="susNewsletter">
+      <div
+        class="container w-[85%] bg-gradient-to-tr from-[#1E527E] via-[#5E3780] to-[#8F2181] mx-auto p-4 md:flex justify-between items-center"
+      >
+        <div class="flex space-x-4 items-center">
+          <div class="bg-white w-12 inSpan">
+            <img
+              src="/img/Open Envelope Clock.png"
+              alt=""
+              class="w-12 bg-transparent"
+            />
+          </div>
+
+          <div class="text-white">
+            <p>Subscribe to our Newsletter</p>
+          </div>
+        </div>
+
+        <div class="my-4 md:my-0">
+          <form action="#" class="lg:bg-white p-2">
+            <input type="text" placeholder="  Email" class="outline-none" />
+            <button
+              type="submit"
+              class="bg-[#1E527E] text-white p-2 my-2 lg:my-0"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <hr class="my-10 border-solid border-2 border-primaryPink" />
+      <div class="container w-[85%] mx-auto flex justify-between">
+        <div>
+          <img src="/img/GGIT_Logo - Real 1.png" class="w-10" alt="" />
+        </div>
+
+        <div>
+          <p class="text-[0.8rem]">copyright Growing Girls in tech</p>
+        </div>
+
+        <div class="inline-flex space-x-2">
+          <a href="#"
+            ><img src="/img/Vector (5).png" class="md:w-6 w-4" alt=""
+          /></a>
+          <a href="#"
+            ><img src="/img/Vector (6).png" class="md:w-6 w-4" alt=""
+          /></a>
+          <a href="#"
+            ><img src="/img/Social Icons (1).png" class="md:w-6 w-4" alt=""
+          /></a>
+          <a href="#"
+            ><img src="/img/Social Icons.png" class="md:w-6 w-4" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
