@@ -83,8 +83,16 @@ h3 {
   scrollbar-width: none;
 }
 
-.slider-wrapper .image-list::-webkit-scrollbar {
+.homep .image-list::-webkit-scrollbar {
   display: none;
+}
+
+.image-list::-webkit-scrollbar {
+  background-color: rgb(238, 231, 231);
+}
+
+.image-list::-webkit-scrollbar-thumb {
+  background-color: rgb(193, 81, 178);
 }
 
 .slider-wrapper .image-list .image-item {
